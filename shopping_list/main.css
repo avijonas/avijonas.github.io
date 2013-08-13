@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/*table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+
+
+
+.area{
+	background-image: url('http://www.antoinedozois.com/LegalPad.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 600px;
+	height: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	top: 100px;
+	border-radius: 2px;
+}
+
+h1{
+	font-family: wf_SegoeUILight, wf_SegoeUI, 'Segoe UI Light', 'Segoe WP Light', 'Segoe UI', Segoe, 'Segoe WP', Tahoma, Verdana, Arial, sans-serif;
+	font-size: 48px;
+	padding-top: 10px;
+	text-align: center;
+}
+ol{
+	position: relative;
+	top: 17px;
+}
+
+li{
+	position: relative;
+	left: 90px;
+	height: 26px;
+	font-family: times, Tahoma, technical;
+	font-size: 16px;
+
+
+}
+input[type=text]{
+	background-color: transparent;
+	border:none;	
+	width: 400px;
+	margin-left: 10px;
+	margin-right:10px;
+}
+.add{
+	position: relative;
+	left:250px;
+	top: 20px;
+}
+
+
+
