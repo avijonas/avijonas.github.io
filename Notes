@@ -1,0 +1,406 @@
+//These boxes can be used on websites to confirm things with users. 
+      //confirm("I am the fucking man");
+
+//console.log() will take whatever is inside the parentheses and log it to the console below your code—that's why it's called console.log()!This is commonly called printing out.
+      //console.log()
+
+//After you run the code, you should see true 4 times, and false 2 times.
+//By using `console.log` at the start of each line, 
+//we are able to print 6 lines of output.
+
+---------------------------------------------------------------------------
+    console.log(15 > 4);
+    console.log("Xiao Hui".length < 122);
+    console.log("Goody Donaldson".length !== 8);
+    console.log(8*2 === 16);
+    console.log(4 === 2)
+    console.log(18 > 21)
+
+//If the condition (in this case, 100 < 2) is true, then it executes the code inside the curly braces {}.If the condition is false, it skips the code in the curly braces entirely and goes on to the next line
+    if ( 100 > 2 ) {
+    console.log("You are good at math!");
+    }
+
+    if (this condition is true) {
+    // do this code
+    }
+    else // "otherwise" {
+    // do this code instead
+    }
+
+
+---------------------------------------------------------------------------    
+We've covered a lot of ground so far! So many new terms, so much syntax. Let's take a breather and review. We have learned:
+
+1. Confirm and prompt
+
+  We can make pop-up boxes appear! 
+  confirm("I am ok");
+  prompt("Are you ok?");
+
+2. Data types
+
+  a. numbers (e.g. 4.3, 134)
+  b. strings (e.g. "dogs go woof!", "JavaScript expert")
+  c. booleans (e.g. false, 5 > 4)
+
+3. Conditionals
+
+  If the first condition is met, execute the first code block. If it is not     met, execute the code in the else block. See the code on the right for       another example.
+  
+4. Math
+  We saw basic math before. The basic math symbols we learned in school work   here. Even the order in which the computer understands the math is the       same as in school!
+
+  Code:
+
+  1. ( ): control order of operations
+  2. * and /: multiplication and division
+  3. - and +: subtraction and addition
+
+  Examples:
+
+    1. 100/10 evaluates to 10
+    2. "Jane".length + 5 evaluates to 9
+    3. 5*(3+1) evaluates to 20
+
+  Modulo. When % is placed between two numbers, the computer will divide the first number by the second, and then return the remainder of that division.
+
+  So if we do 23 % 10, we divide 23 by 10 which equals 2 with 3 left over. So   23 % 10 evaluates to 3.
+
+  More examples:
+
+  17 % 5 evaluates to 2
+  13 % 7 evaluates to 6
+
+  console.log(11%3)
+
+  if( 13%3 ) {
+    console.log("The first number is even!");
+  } else {
+    console.log("The first number is odd!");
+  }
+
+---------------------------------------------------------------------------
+  
+Substrings
+We've learned a few ways to manipulate numbers. What about manipulating strings?
+
+Sometimes you don't want to display the entire string, just a part of it. For example, in your Gmail inbox, you can set it to display the first 50 or so characters of each message so you can preview them. This preview is a substring of the original string (the entire message).
+
+  Code:
+
+  "some word".substring(x, y) where x is where you start chopping and y is where you finish chopping the original string.
+
+  The number part is a little strange. To select for the "he" in "hello", you would write this: "hello". substring(0, 2);
+
+  Think of there being a marker to the left of each character, like this: 0-h-1-e-2-l-3-l-4-o-5.
+
+  If you chop at 0 and again at 2 you are left with just he.
+
+More examples:
+
+  1. First 3 letters of "Batman"
+  "Batman".substring(0,3)
+
+  2. From 4th to 6th letter of "laptop"
+  "laptop".substring(3,6)
+
+---------------------------------------------------------------------------
+
+Variables
+
+We have learned how to do a few things now: make strings, find the length of strings, find what character is in the nth position, do basic math. Not bad for a day's work!
+
+To do more complex coding, we need a way to 'save' the values from our coding. We do this by defining a variable with a specific, case-sensitive name. Once you create (or declare) a variable as having a particular name, you can then call up that value by typing the variable name.
+
+Code:
+
+var varName = data;
+
+Example:
+
+a. var myName = "Leng";
+b. var myAge = 30;
+c. var isOdd = true;
+
+ex.      
+  // Declare a variable on line 3 called
+  // myCountry and give it a string value.
+      var myCountry = "USA"
+
+  // Use console.log to print out the length of the variable myCountry.
+      console.log(myCountry.length );
+
+  // Use console.log to print out the first three letters of myCountry.
+      console.log(myCountry.substring(0,3));
+
+ex.
+  // On line 2, declare a variable myName and give it your name.
+    var myName = "Avi"
+  // On line 4, use console.log to print out the myName variable.
+    console.log(myName)
+  // On line 7, change the value of myName to be just the first 2 
+  // letters of your name.
+    myName = "Av"
+  // On line 9, use console.log to print out the myName variable.
+    console.log(myName)
+
+
+
+---------------------------------------------------------------------------Functions:
+
+Think of a function as having four parts.
+
+Declare the function using var, and then give it a name.
+  The var keyword declares the function.
+Then you must use the function keyword to tell the computer that you are making a function.
+  The keyword function tells the computer it is a function and not something else
+The bit in the parentheses is called the parameter. Think of it as a placeholder word that we give a specific value when we call the function. See the hint for more.
+  Parameters go in the parentheses. The computer will look out for it in the code block
+Then write your block of reusable code between { }. Every line of code in this block must end with a ;.
+  
+
+This is what a function looks like:
+
+ex. 
+    var divideByThree = function (number) {
+      var val = number / 3;
+      console.log(val);
+    };
+    divideByThree(74);
+
+On line 11, we call the function by name
+Here, it is called 'dividebythree'
+We tell the computer what the number input is (i.e. 6)
+The computer then uses the code inside the function!
+
+                              
+We can join strings together using the plus sign (+)
+    var greeting = function (name) {
+      console.log("Great to see you," + " " + name);
+    };
+
+Global vs Local Variables
+
+
+Variables defined outside a function are accessible anywhere once they have been declared. They are called global variables and their scope is global.
+
+Variables defined within a function are local variables. They cannot be accessed outside of the function.
+
+ex.
+    var volume = function (w, l, h) {
+      var area = w * l;
+      console.log("Inside the function, area is " + area);
+      return area * h;
+    };
+  var area = 36;
+  console.log("The volume is " + volume(2, 3, 4));
+  console.log("Outside the function, area is " + area);
+
+Function with Multiple Parameters
+
+ex.
+    var multiply = function (x, y) {
+      return x * y;
+    };
+    multiply(2, 5);
+
+    var volume = function (w, l, h ) {
+      return w * l * h ;
+    };
+    volume(2, 3, 4);
+When you call a function, you don't need to know the parameters' names. 
+
+
+---------------------------------------------------------------------------
+For Loop
+
+Syntax
+
+     for(var i = start; i < end; i++){
+        // Do something
+      }
+Every for loop makes use of a counting variable. Here, our variable is called i (but it can have any name). The variable has many roles. The first part of the for loop tells the computer to start with a value of 1 for i. It does this by declaring the variable called i and giving it a value of 1.
+
+When the for loop executes the code in the code block—the bit between { }—it does so by starting off where i = 1.
+  
+Rules to learn
+
+a. A more efficient way to code to increment up by 1 is to write i++.
+b. We decrement down by 1 by writing i--.
+c. We can increment up by any value by writing i += x, where x is how much we want to increment up by. e.g., i += 3 counts up by 3s.
+d. We can decrement down by any value by writing i -= x. (See the Hint for more.)
+e. Be very careful with your syntax—if you write a loop that can't properly end, it's called an infinite loop. It will crash your browser!
+  
+  // Example for loop
+
+for (var i = 8 ; i < 120; i+=12) {
+	console.log(i);
+}
+
+---------------------------------------------------------------------------
+  
+Arrays
+
+Variables can store numbers or strings. But so far, we've only been able to store ONE number or ONE string. Good thing we have arrays. Arrays:
+
+a. store lists of data
+b. can store different data types at the same time
+c. are ordered so the position of each piece of data is fixed
+
+Example:
+
+var names = ["Mao","Gandhi","Mandela"];
+
+var sizes = [4, 6, 3, 2, 1, 9];
+
+var mixed = [34, "candy", "blue", 11];
+Syntax:
+var arrayName = [data, data, data];
+
+Any time you see data surrounded by [ ], it is an array.
+                                     
+The position (or the index) of each bit of data is counted starting from 0, not 1.
+
+First element in the array: junkData[0]
+Third element in the array: junkData[2]
+Arrays have 0-based indexing, so we start counting the positions from 0.
+
+// Let's print out every element of an array using a for loop
+
+var cities = ["Melbourne", "Amman", "Helsinki", "NYC"];
+
+for (var i = 0; i < cities.length; i++) {
+    console.log("I would like to visit " + cities[i]);
+}
+
+
+  
+---------------------------------------------------------------------------
+While Loops:
+
+ex. var coin = Math.floor(Math.random() * 2);
+
+    while(coin){
+      console.log("Heads! Flipping again...");
+      var coin = Math.floor(Math.random() * 2);
+    }
+    console.log("Tails! Done flipping.");
+
+As long as the condition evaluates to true, the loop will continue to run. As soon as it's false, it'll stop. (When you use a number in a condition, as we did earlier, JavaScript understands 1 to mean true and 0 to mean false.)
+
+We mentioned infinite loops in the previous exercise. If you give a while loop a condition that is true and you don't build in a way for that condition to possibly become false, the loop will go on forever and your program will crash. No good!
+
+To prevent this from happening, you always need a way to ensure the condition between your while parentheses can change
+
+ex. 
+    var loops = 0;
+
+    var loop = function(){
+      while(loops <= 3){
+    
+        return "I'm looping!";
+        loops++;
+      }
+    };
+
+    loop();
+
+Sometimes you want to make sure your loop runs at least one time no matter what. When this is the case, you want a modified while loop called a do/while loop.
+
+This loop says: "Hey! Do this thing one time, then check the condition to see if we should keep looping." After that, it's just like a normal while: the loop will continue so long as the condition being evaluated is true.
+
+ex.
+    loopCondition = false;
+
+    do {
+      console.log("I'm gonna stop looping 'cause my condition is " + String(loopCondition) + "!");  
+    } while (loopCondition);
+
+You can make a two-dimensional array by nesting arrays one layer deep, like so:
+
+  var twoDimensional = [[1, 1], [1, 1]];
+This array is two-dimensional because it has two rows that each contain two items. If you were to put a new line between the two rows, you could log a 2D object—a square—to the console, like so:
+
+[1, 1]
+[1, 1]
+---------------------------------------------------------------------------
+OBJECTS
+
+Using objects, we can put our information and the functions that use that information in the same place.
+
+You can also think of objects as combinations of key-value pairs (like arrays), only their keys don't have to be numbers like 0, 1, or 2: they can be strings and variables.
+
+There are two ways to create an object: using object literal notation (which is what you just did) and using the object constructor.
+
+Literal notation is just creating an object with curly braces, like this:
+
+      var myObj = {
+          type: 'fancy',
+          disposition: 'sunny'
+      };
+
+      var emptyObj = {};
+
+When you use the object constructor, the syntax looks like this:
+
+      var myObj = new Object();
+
+This tells JavaScript: "I want you to make me a new thing, and I want that thing to be an Object.
+
+You can add keys to your object after you've created it in two ways:
+
+    myObj["name"] = "Charlie";
+    myObj.name = "Charlie";
+
+ex. 
+  // Our bob object again, but made using a constructor this time 
+      var bob = new Object();
+      bob.name = "Bob Smith";
+      bob.age = 30;
+  // Here is susan1, in literal notation
+      var susan1 = {
+        name: "Susan Jordan",
+        age: 24
+      };
+  // Make a new susan2 object, using a constructor instead
+      var susan2 = new Object();
+      susan2.name = "Susan Jordan";
+      susan2.age = 24;
+
+---------------------------------------------------------------------------
+METHODS
+
+A method is just like a function associated with an object.
+
+Methods serve several important purposes when it comes to objects.
+
+They can be used to change object property values. The method setAge on line 4 allows us to update bob.age.
+They can be used to make calculations based on object properties. Functions can only use parameters as an input, but methods can make calculations with object properties. For example, we can calculate the year bob was born based on his age with our getYearOfBirth method (line 8).
+
+ex.
+    var bob = new Object();
+    bob.age = 30;
+  // this time we have added a method, setAge
+    bob.setAge = function (newAge){
+      bob.age = newAge;
+    };
+
+    bob.getYearOfBirth = function () {
+      return 2013 - bob.age;
+    };
+    console.log(bob.getYearOfBirth());
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
