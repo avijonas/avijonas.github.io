@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #3b4648 ;
 }
 
 blockquote, q {
@@ -35,17 +36,13 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-
-body{
-	background-color: #3b4648 ;
-}
 h1{
-	position: relative;
-	top: 50px;
-	left: 50px;
+	margin-top: 50px;
+	margin-left: 50px;
 	font-family: 'Istok Web', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
+	color: #94c56a;
 
 }
 .quizbox{
@@ -55,6 +52,7 @@ h1{
 	top: 125px;
 	left: 400px;
 	background-color: #e27453;
+  border-radius: 30px;
 }
 .question{
 	font-family: 'Maven Pro', sans-serif;
@@ -95,12 +93,12 @@ table{
 	height: 400px;
 	width: 500px;
 	margin:  0 auto 0 auto;
-	border-radius: 3px;
+	border-radius: 50px;
 
 }
 td{
 	border: 1px solid black;
-	border-radius: 2px;
+	border-radius: 30px;
 	width: 240px;
 	background-color: #3656d5  ;
 }
@@ -109,12 +107,22 @@ td p{
 	text-align: center;
 	position: relative;
 	top:20px;
-	background-color: #3656d5  ;
-	color: #94c56a;
+	
+	color: white;
 }
 
 
-.pic{
-	position: relative;
-	display:none;
+.pic {
+	position: absolute;
+	left: 1000px;
+	top: 200px;	
+}
+.smiley{
+	display: none;
+}
+.sad{
+	display: none;
+}
+.highlight{
+	background-color:#7cc576 ;
 }

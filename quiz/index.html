@@ -8,11 +8,14 @@
     <script type="text/javascript" src="jhttp://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="application.js"></script>
     <title>Quiz</title>
 </head>
 <body>
+    <body>
     <h1>A Quiz about Nothing</h1>
+     <div class = "score"></div>
     <!--<div class="quizbox">
         <h2 class="question">Is this a question?</h2>
         <ul class="choices">
@@ -23,25 +26,29 @@
             
         </ul>
     </div> -->
+
     
     <div class="quizbox">
         <h2 class="question">Is this a question?</h2>
         <table>
             <tr>
-                <td><span>A]</span><p>Answer</p></td>
-                <td><span>B]</span><p>Answer</p></td>
+                <td><span>A]</span><p id="c0">Answer</p></td>
+                <td><span>B]</span><p id="c1">Answer</p></td>
             </tr>
             <tr>
-                <td><span>C]</span><p>Answer</p></td>
-                <td><span>D]</span><p>Answer</p></td>
+                <td><span>C]</span><p id="c2">Answer</p></td>
+                <td><span>D]</span><p id="c3">Answer</p></td>
             </tr>
         </table>
-    </div>
+        <button type="button">Next</button>
+       
+
+    
+    <img class="pic smiley" src="images/happy-green-face-md.png">
+    <img class="pic sad" src="images/red_sad_face.png">
 
 
-
-    <img class="pic smiley" src="images/smiley.jpeg">
-    <img class="pic sad" src="images/sad.jpeg">
+   
 
 
 
