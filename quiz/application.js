@@ -5,9 +5,9 @@ $(document).ready(function(){
                  choices:["red", "white", "blue", "green"],
                  answer:1},
                 {question:"Who is the current host of 'The Price is Right'?",
-                 choices:["Bob Barker", "Steve Harvey" , "Drew Carey", "Walter Cronkeit"],
+                 choices:["Bob Barker", "Steve Harvey" , "Drew Carey", "Walter Cronkite"],
                  answer:2},
-                {question:"Which show did the Soup Nazi from Seinfeld make a guest appearance?",
+                {question:"The Soup Nazi from Seinfeld made a guest appearance on this show?",
                  choices:["Friends", "30 Rock", "Curb Your Enthusiam", "Scrubs"],
                  answer:3},
                 {question:"54 is 45 more than...",
@@ -42,7 +42,7 @@ $(document).ready(function(){
    
     if (right[1] == correct){
       score++;
-      $(".score").html("You have answered " + score + " correctly");
+      $(".score").html("Correct Answers: " + score + " out of 5");
     	$(".smiley").show();
     	$(".sad").hide();
 	  }else {
