@@ -84,6 +84,7 @@ table{
 		width: 240px;
 		background-color: #3656d5;
 		border-style: none;
+    cursor:pointer;
 	}
 	span{
 		margin-left: 3px;
@@ -123,15 +124,16 @@ button{
 	outline: none;
 	width: 60px;	
 	font-family: WOL_SB, 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, sans-serif;
+  cursor:pointer;
 }
 
 .pic {
 	position: absolute;
-	left: 720px;
-	top: 40px;	
+	left: 85%;
+	top: -30%;	
 }
 .smiley{
-	/*display: none;*/
+	display: none;
 }
 .sad{
 	display: none;
@@ -148,7 +150,7 @@ button{
     font-family: WOL_SB, 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, sans-serif;
     text-align:center;
     margin:5px;
-    position: relative;
-    left: 840px;
+    position: absolute;
+    left: 105%;
     bottom: 150px;
 }
