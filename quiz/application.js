@@ -65,6 +65,73 @@ $(document).ready(function(){
     $("td").on('click',compare); 
   });
      
+//http://www.restyr.com/simple-javascript-jquery-timer/
+function _timer(callback)
+{
+    var time = 20;     //  The default time of the timer
+    var mode = 0;     //    Mode: count up or count down
+    var status = 1;    //    Status: timer is running or stoped
+    var timer_id;    //    This is used by setInterval function
+    
+    // this will start the timer ex. start the timer with 1 second interval timer.start(1000) 
+    this.start = function(interval)
+    {
+        interval = (typeof(interval) !== 'undefined') ? interval : 1000;
+ 
+        if(status == 0)
+        {
+            status = 1;
+            timer_id = setInterval(function()
+            {
+                switch(mode)
+                {
+                    default:
+                    if(time)
+                    {
+                        time--;
+                        generateTime();
+                        if(typeof(callback) === 'function') callback(time);
+                    }
+                    break;
+                    
+                    case 1:
+                    if(time < 86400)
+                    {
+                        time++;
+                        generateTime();
+                        if(typeof(callback) === 'function') callback(time);
+                    }
+                    break;
+                }
+            }, interval);
+        }
+    }
+    function generateTime()
+    {
+        var second = time % 60;
+        second = (second < 10) ? '0'+second : second; 
+        $('div.timer span.second').html(second);  
+    }
+}
+var timer;
+ 
+$(document).ready(function(e) 
+{
+    timer = new _timer
+    (
+        function(time)
+        {
+          if(time == 0)
+          {
+              timer.stop();
+              alert('time out');
+          }
+        }
+    );
+    timer.reset(60);
+    timer.mode(0);
+});
+
 
   
   
