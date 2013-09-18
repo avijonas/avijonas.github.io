@@ -15,9 +15,12 @@
   <!-- create dropdown list of all nba teams, allow user to select 1, store id of the team in id attribute -->
  
 <body>
-  <h1>NBA News</h1>
-  <h3>Read the lastest news of your favorite NBA team</h3>  
-  <div class="navbar">
+  <div id="wrapper">
+  <header>
+    <h1>NBA News</h1>
+    <h3>See the lastest headlines of your favorite NBA team</h3> 
+  </header> 
+  <div class="dropdown">
     <select class="teams">
       <option id="" selected="selected">Select a team</option>
       <option id="1">Atlanta Hawks</option>
@@ -33,7 +36,8 @@
       <option id="10">Houston Rockets</option>
       <option id="11">Indiana Pacers</option>
       <option id="12">LA Clippers</option>>
-      <option id="13">LA Lakers</option      <option id="29">Memphis Grizzlies</option>
+      <option id="13">LA Lakers</option>
+      <option id="29">Memphis Grizzlies</option>
       <option id="14">Miami Heat</option>
       <option id="15">Milwaukee Bucks</option>
       <option id="16">Minnesota Timberwolves</option>
@@ -49,15 +53,11 @@
       <option id="28">Toronto Raptors</option>
       <option id="26">Utah Jazz</option>
       <option id="27">Washington Wizards</option>
-    </select>
-    
-
-    <div id="news"></div>
+    </select>  
+  </div>
+  <div id="news"></div>
 
   </div>
-  
-
-
 </body>
 
 

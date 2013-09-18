@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    padding:0;
+	background:url('http://www.michael-weinstein.com/wp-content/uploads/2013/04/wallpaper.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#wrapper{
+    /*background-color: rgba(255,255,255,0.7);*/
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+h1{
+	font-family: brandon-grotesque, sans-serif;
+	font-size: 50px;
+	font-style: oblique;
+	padding-top: 50px;
+}
+h3{
+	font-family: brandon-grotesque, sans-serif;
+}
+
+
+
+#news{
+	width:500px;
+  	margin:40px auto 0 auto;
+}
