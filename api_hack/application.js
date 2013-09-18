@@ -42,8 +42,12 @@ var getTeamInfo = function(id){
             console.log(teamInfo.headlines[i].headline);
             $('#news').append('<h4>' + teamInfo.headlines[i].headline + '</h4>');  
         }
+
     });      
 };
+
+// in order to display other related info to the story, i need to get the id from a specifc headline or story, append that after /news
+// ex. /news/:id 
 
 
 
