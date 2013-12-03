@@ -27,7 +27,7 @@ var getTeamInfo = function(id){
                     + '<h4>' + teamInfo.headlines[i].title + '</h4>'
                     + '<p>'+teamInfo.headlines[i].description+'</p>'
                     + '<a target="_blank" href= " '+teamInfo.headlines[i].links.web.href+' ">Read More</a>'
-                    +
+                    + 
                 '</div>');
             $('#wrapper').css({backgroundColor: 'rgba(255,255,255,0.7)'});
             //teamInfo.headlines[i].links.web.href

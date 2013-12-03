@@ -2,10 +2,11 @@ body{
     margin:0;
     padding:0;
 	background:url('http://www.michael-weinstein.com/wp-content/uploads/2013/04/wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    
 }
 #wrapper{
     /*background-color: rgba(255,255,255,0.7);*/
@@ -20,6 +21,7 @@ h1{
 	font-size: 50px;
 	font-style: oblique;
 	padding-top: 50px;
+    margin-top: 0;
 }
 h3{
 	font-family: brandon-grotesque, sans-serif;
